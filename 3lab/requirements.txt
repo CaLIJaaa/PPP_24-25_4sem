@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+celery
+redis
+redislite
+websockets
+pydantic-settings
+sqlalchemy
+httpx
+python-dotenv
