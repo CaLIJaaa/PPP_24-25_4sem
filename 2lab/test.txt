@@ -1,0 +1,13 @@
+curl -X POST "http://127.0.0.1:8000/encryption/encode" \
+    -H "Content-Type: application/json" \
+    -d '{"text": "Hello, FastAPI!", "key": "supersecret"}'
+
+
+curl -X POST "http://127.0.0.1:8000/encryption/decode" \    
+    -H "Content-Type: application/json" \
+    -d '{                                                 
+        "encoded_data": "/lANiVQAKGM=",
+        "key": "supersecret",
+        "huffman_codes": {"a":"000","l":"001","s":"0100","o":"0101","P":"0110"," ":"0111","H":"1000","I":"1001","!":"1010","F":"1011","t":"1100","e":"1101","A":"1110",",":"1111"},
+        "padding": 7
+    }'
