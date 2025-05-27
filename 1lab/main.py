@@ -17,7 +17,7 @@ def run_client_commands():
         ['get'], 
         ['refresh'], 
         ['list'], 
-        ['cut', '--file', '0', '--start', '30', '--end', '50', '--output', 'output123.mp3'] 
+        ['cut', '--file', '0', '--start', '30', '--end', '50', '--output', 'output1233123.mp3'] 
     ]
     
     for cmd in commands:

@@ -81,7 +81,7 @@ class AudioClient:
     
         try:
             self.socket.send("get_audio_list".encode('utf-8'))
-            response = self.socket.recv(8192).decode('utf-8')
+            response = self.socket.recv(8192).decode('utf-8') #todo сделать через цикл
             return json.loads(response)
         except Exception as e:
             print(f"Ошибка при получении списка аудио: {e}")
